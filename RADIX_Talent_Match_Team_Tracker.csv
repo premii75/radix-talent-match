@@ -1,0 +1,21 @@
+Milestone_ID,Phase,Owner,Milestone_Task,Priority,Status,Dependency,Est_Time,Acceptance_Criteria_Definition_of_Done,Blocker_Notes
+M01,Pre-work,All,Read Participant Guide & Packs,P0,Done,None,Pre-event,Every member can explain what they hand off and receive,None
+M02,Phase 1,All,Confirm Role Ownership,P0,Done,M01,15 min,Every member signs off on their module responsibility,None
+M03,Phase 1,All / M1,Lock Shared Data Contract,P0,In Progress,M02,30 min,Shared JSON schema committed to Git repository,Writing contract
+M04,Phase 1,All,Environment & Repo Scaffold Ready,P0,Not Started,M03,15 min,Python venv and React scaffold running; sample files placed,None
+M05,Phase 2,M2 (JD Analytics),JD Raw Text Extraction,P0,Not Started,M04,30 min,Loads PDF/DOCX JD and outputs clean plain text,None
+M06,Phase 2,M2 (JD Analytics),JD Skill Extraction (LLM),P0,Not Started,M05,60 min,Outputs 12-category structured JSON for at least 3 of 6 sample JDs,None
+M07,Phase 2,M3 (Resume Parser),Resume Raw Text Extraction,P0,Not Started,M04,30 min,Extracts text from diverse PDF/DOCX resume layouts,None
+M08,Phase 2,M3 (Resume Parser),Resume Skill Extraction (LLM),P0,Not Started,M07,60 min,Extracts structured JSON for at least 2 of 4 sample resumes,None
+M09,Phase 2,M1 (Profile Builder),Profile Form Complete,P0,Not Started,M04,60 min,Captures basic details, skills, hackathons, certs, and preferred roles,None
+M10,Phase 2,M1 (Profile Builder),Profile Save/Load + Merge,P0,Not Started,M08; M09,45 min,Reloads saved profile and merges Resume Parser output,None
+M11,Phase 2,M4 (Talent Check),Company Skillset Data Loads,P0,Not Started,M04,30 min,Loads talent_check_company_skillsets.json into memory,None
+M12,Phase 2,M4 (Talent Check),Talent Check Scoring Logic,P0,Not Started,M10; M11,60 min,Produces 0-100 Readiness Score and 12-skill gap list,None
+M13,Phase 2,M5 (Skill Match),JD Skill List Loader,P0,Not Started,M06,20 min,Loads extracted JD skill JSON into matching engine,None
+M14,Phase 2,M5 (Skill Match),Skill Match Scoring (Fuzzy),P0,Not Started,M10; M13,70 min,Computes match % and displays Matched vs Missing skills list,None
+M15,Phase 3,All,Modules Handshake Back-to-Back,P0,Not Started,M06;08;10;12;14,20 min,All 5 modules read/write shared JSON contract without errors,None
+M16,Phase 3,All / M1,One Shared Screen (Integrated UI),P0,Not Started,M15,40 min,Single integrated flow working inside shared React app,None
+M17,Phase 3,All,Two Combos Demoed Live,P0,Not Started,M16,20 min,At least 2 JD/candidate combinations run end-to-end successfully,None
+M18,Phase 3,All,Bugs Triaged & Offline Fallbacks Added,P1,Not Started,M17,10 min,Known edge cases logged with offline mock fallback toggle,None
+M19,Phase 4,All / M1,Walkthrough Deck & Script Ready,P0,Not Started,M17,30 min,5-8 min slides ready: Problem, Architecture, Demo, Challenge,None
+M20,Phase 4,All,Live Demo Rehearsed End-to-End,P0,Not Started,M19,15 min,Live demo rehearsed without mentor help at least twice,None
