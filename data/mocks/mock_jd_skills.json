@@ -1,0 +1,98 @@
+{
+  "job_id": "JD-GOOG-SWE-2026",
+  "title": "Senior Software Engineer - Distributed Systems",
+  "company": "Google LLC",
+  "location": "Bengaluru / Hybrid",
+  "experience_years_required": 5,
+  "skills_required": [
+    {
+      "category": "Core Technical Skills",
+      "skill_name": "Python & Go",
+      "required_level": 8,
+      "is_mandatory": true,
+      "context_quote": "Extensive experience developing high-concurrency services in Go, Python, or C++."
+    },
+    {
+      "category": "Software Architecture & Design",
+      "skill_name": "Microservices & Distributed Systems",
+      "required_level": 9,
+      "is_mandatory": true,
+      "context_quote": "Design robust, highly available distributed architecture capable of handling millions of queries per second."
+    },
+    {
+      "category": "Systems & Cloud Infrastructure",
+      "skill_name": "Kubernetes & GCP",
+      "required_level": 8,
+      "is_mandatory": true,
+      "context_quote": "Deep knowledge of container orchestration (Kubernetes/Borg) and cloud infrastructure."
+    },
+    {
+      "category": "Data Engineering & Databases",
+      "skill_name": "Distributed Storage (Spanner, Bigtable)",
+      "required_level": 7,
+      "is_mandatory": false,
+      "context_quote": "Familiarity with distributed NoSQL stores, transactional databases, and event streaming systems."
+    },
+    {
+      "category": "Quality Assurance & Testing",
+      "skill_name": "Automated Testing & Reliability Engineering",
+      "required_level": 7,
+      "is_mandatory": false,
+      "context_quote": "Drive unit, integration, stress testing, and ensure high test coverage."
+    },
+    {
+      "category": "Security & Compliance",
+      "skill_name": "Zero-Trust & Auth Systems",
+      "required_level": 6,
+      "is_mandatory": false,
+      "context_quote": "Implement secure authentication, authorization, and data encryption practices."
+    },
+    {
+      "category": "Developer Tooling & DevOps",
+      "skill_name": "CI/CD & Observability (Prometheus, OpenTelemetry)",
+      "required_level": 7,
+      "is_mandatory": true,
+      "context_quote": "Manage CI/CD pipelines and production observability (metrics, tracing, alerts)."
+    },
+    {
+      "category": "Problem Solving & Algorithms",
+      "skill_name": "Algorithms, Data Structures & Concurrency",
+      "required_level": 9,
+      "is_mandatory": true,
+      "context_quote": "Exceptional foundation in algorithms, concurrent programming, and complexity trade-offs."
+    },
+    {
+      "category": "Collaboration & Communication",
+      "skill_name": "Cross-functional Collaboration & Mentorship",
+      "required_level": 8,
+      "is_mandatory": false,
+      "context_quote": "Mentor junior engineers and collaborate cross-functionally with product managers and SREs."
+    },
+    {
+      "category": "Project & Product Management",
+      "skill_name": "Agile Sprint Ownership & Roadmapping",
+      "required_level": 6,
+      "is_mandatory": false,
+      "context_quote": "Participate in agile planning, define sprint milestones, and meet delivery deadlines."
+    },
+    {
+      "category": "Business Domain & Industry Knowledge",
+      "skill_name": "High-Throughput Web Scale Platforms",
+      "required_level": 7,
+      "is_mandatory": false,
+      "context_quote": "Understanding of hyper-scale platform dynamics, low latency requirements, and SLA management."
+    },
+    {
+      "category": "Learning & Adaptability",
+      "skill_name": "Rapid Technology Adoption & AI Tooling",
+      "required_level": 8,
+      "is_mandatory": false,
+      "context_quote": "Eagerness to adopt emerging AI developer tools, new frameworks, and modern paradigms."
+    }
+  ],
+  "workplace_parameters": {
+    "param_164_communication_style": "Async-first, structured technical design docs (PRDs/RFCs)",
+    "param_165_work_environment_pacing": "High-ownership, rapid iterative sprints with rigorous code reviews",
+    "param_166_collaboration_breadth": "Cross-timezone global teams across engineering, QA, and product"
+  }
+}

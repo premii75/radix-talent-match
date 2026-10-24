@@ -1,0 +1,80 @@
+{
+  "name": "Ananya Rao",
+  "email": "ananya.rao@example.com",
+  "education": "B.Tech Computer Science (Batch of 2028), CGPA: 9.1",
+  "skills": [
+    {
+      "skill_name": "C++",
+      "category_code": "COD",
+      "evidence": "Primary language for systems & competitive programming",
+      "confidence": "high",
+      "level": 9
+    },
+    {
+      "skill_name": "Data Structures & Algorithms",
+      "category_code": "DSA",
+      "evidence": "Solved 600+ problems with optimal time/space complexity",
+      "confidence": "high",
+      "level": 9
+    },
+    {
+      "skill_name": "Distributed Systems",
+      "category_code": "SYSD",
+      "evidence": "Implemented Raft consensus protocol in Go; telemetry daemon in C++",
+      "confidence": "high",
+      "level": 8
+    },
+    {
+      "skill_name": "Linux OS & Concurrency",
+      "category_code": "OS",
+      "evidence": "Kernel tracing, custom threadpool, POSIX multi-threading",
+      "confidence": "high",
+      "level": 9
+    },
+    {
+      "skill_name": "Networking / TCP/IP",
+      "category_code": "NETW",
+      "evidence": "TCP socket programming, RPC protocols",
+      "confidence": "high",
+      "level": 7
+    },
+    {
+      "skill_name": "Software Engineering",
+      "category_code": "SWE",
+      "evidence": "Clean modular C++, unit tests, CI pipelines",
+      "confidence": "high",
+      "level": 8
+    },
+    {
+      "skill_name": "Cloud / Docker",
+      "category_code": "CLOUD",
+      "evidence": "Kubernetes, Docker containerization, AWS EC2/S3",
+      "confidence": "medium",
+      "level": 7
+    },
+    {
+      "skill_name": "Object-Oriented Design",
+      "category_code": "OOD",
+      "evidence": "Solid design patterns and modular system architecture",
+      "confidence": "high",
+      "level": 8
+    }
+  ],
+  "hackathons": [
+    "Smart India Hackathon 2025 - Winner (Kernel Optimization)",
+    "RADIX Talent Match Hackathon 2026 - Finalist"
+  ],
+  "internships": [
+    "Systems Intern at CloudScale (Built Linux kernel tracing tools in C++)"
+  ],
+  "certifications": [
+    "Linux Foundation Certified System Administrator (LFCS)",
+    "AWS Certified Solutions Architect"
+  ],
+  "preferred_roles": [
+    "Software Engineer",
+    "Systems Engineer",
+    "Backend Engineer"
+  ],
+  "cv_file": "Ananya_Rao_Resume.pdf"
+}

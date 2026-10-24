@@ -1,0 +1,53 @@
+{
+  "Google LLC": {
+    "COD": 9,
+    "DSA": 9,
+    "OOD": 8,
+    "APTI": 8,
+    "COMM": 7,
+    "AI": 7,
+    "CLOUD": 7,
+    "SQL": 6,
+    "SWE": 8,
+    "SYSD": 8,
+    "NETW": 6,
+    "OS": 8,
+    "ai_tooling_policy": "Enterprise Gemini Code Assist & internal AI tools fully integrated. AI-native engineering workflows strongly encouraged across all repos.",
+    "oncall_policy": "Low-to-moderate. 1 week shift every 8-10 weeks with dedicated monetary compensation & compensatory time-off.",
+    "mobility_policy": "12 months in role. High internal mobility with self-service team matching and no manager veto allowed."
+  },
+  "Microsoft Corporation": {
+    "COD": 8,
+    "DSA": 8,
+    "OOD": 8,
+    "APTI": 7,
+    "COMM": 8,
+    "AI": 6,
+    "CLOUD": 8,
+    "SQL": 7,
+    "SWE": 8,
+    "SYSD": 7,
+    "NETW": 6,
+    "OS": 7,
+    "ai_tooling_policy": "GitHub Copilot Enterprise provided to all developers; strong cultural push for Copilot-assisted coding and PR reviews.",
+    "oncall_policy": "Moderate. Standard tier-2 engineering rotation with overtime pay and paging budgets.",
+    "mobility_policy": "12-18 months in current role, subject to performance rating and standard internal hiring loop."
+  },
+  "Oracle Financial Services Software": {
+    "COD": 7,
+    "DSA": 6,
+    "OOD": 7,
+    "APTI": 7,
+    "COMM": 8,
+    "AI": 4,
+    "CLOUD": 5,
+    "SQL": 8,
+    "SWE": 7,
+    "SYSD": 5,
+    "NETW": 7,
+    "OS": 6,
+    "ai_tooling_policy": "Strict banking compliance. Third-party cloud AI tools restricted; only approved internal Oracle AI assistants permitted on code.",
+    "oncall_policy": "High for Application Support roles (24/7 SLA shifts with night shift allowance & weekend roster).",
+    "mobility_policy": "18-24 months required in current project before release eligibility is reviewed by leadership."
+  }
+}

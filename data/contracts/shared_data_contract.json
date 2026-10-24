@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RADIX Talent Match Shared Data Contracts",
+  "description": "Standardized schema contracts connecting all 5 roles in the RADIX Talent Match system.",
+  "definitions": {
+    "SingleSkill": {
+      "type": "object",
+      "required": ["category", "skill_name", "level"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "Core Technical Skills",
+            "Software Architecture & Design",
+            "Systems & Cloud Infrastructure",
+            "Data Engineering & Databases",
+            "Quality Assurance & Testing",
+            "Security & Compliance",
+            "Developer Tooling & DevOps",
+            "Problem Solving & Algorithms",
+            "Collaboration & Communication",
+            "Project & Product Management",
+            "Business Domain & Industry Knowledge",
+            "Learning & Adaptability"
+          ]
+        },
+        "skill_name": { "type": "string" },
+        "level": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "years_experience": { "type": "number", "minimum": 0 },
+        "evidence_quote": { "type": "string" }
+      }
+    },
+    "CandidateProfile": {
+      "type": "object",
+      "required": ["candidate_id", "name", "email", "skills_profile"],
+      "properties": {
+        "candidate_id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "total_years_experience": { "type": "number" },
+        "education": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "degree": { "type": "string" },
+              "institution": { "type": "string" },
+              "graduation_year": { "type": "integer" }
+            }
+          }
+        },
+        "skills_profile": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/SingleSkill" }
+        },
+        "workplace_preferences": {
+          "type": "object",
+          "properties": {
+            "param_164_communication_style": { "type": "string" },
+            "param_165_work_environment_pacing": { "type": "string" },
+            "param_166_collaboration_breadth": { "type": "string" }
+          }
+        }
+      }
+    },
+    "JDSkillExtraction": {
+      "type": "object",
+      "required": ["job_id", "title", "company", "skills_required"],
+      "properties": {
+        "job_id": { "type": "string" },
+        "title": { "type": "string" },
+        "company": { "type": "string" },
+        "location": { "type": "string" },
+        "experience_years_required": { "type": "number" },
+        "skills_required": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["category", "skill_name", "required_level"],
+            "properties": {
+              "category": { "type": "string" },
+              "skill_name": { "type": "string" },
+              "required_level": { "type": "integer", "minimum": 1, "maximum": 10 },
+              "is_mandatory": { "type": "boolean" },
+              "context_quote": { "type": "string" }
+            }
+          }
+        },
+        "workplace_parameters": {
+          "type": "object",
+          "properties": {
+            "param_164_communication_style": { "type": "string" },
+            "param_165_work_environment_pacing": { "type": "string" },
+            "param_166_collaboration_breadth": { "type": "string" }
+          }
+        }
+      }
+    },
+    "TalentCheckResult": {
+      "type": "object",
+      "required": ["candidate_id", "company_id", "overall_fit_score", "skill_category_evaluations"],
+      "properties": {
+        "candidate_id": { "type": "string" },
+        "company_id": { "type": "string" },
+        "overall_fit_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "status": { "type": "string", "enum": ["Meets Bar", "Potential Fit", "Below Bar"] },
+        "skill_category_evaluations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": { "type": "string" },
+              "candidate_level": { "type": "integer" },
+              "company_bar_level": { "type": "integer" },
+              "delta": { "type": "integer" },
+              "passed": { "type": "boolean" }
+            }
+          }
+        },
+        "parameter_alignments": {
+          "type": "object",
+          "properties": {
+            "param_164_match": { "type": "boolean" },
+            "param_165_match": { "type": "boolean" },
+            "param_166_match": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "SkillMatchResult": {
+      "type": "object",
+      "required": ["candidate_id", "job_id", "match_percentage", "gaps", "strong_matches"],
+      "properties": {
+        "candidate_id": { "type": "string" },
+        "job_id": { "type": "string" },
+        "match_percentage": { "type": "number", "minimum": 0, "maximum": 100 },
+        "strong_matches": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": { "type": "string" },
+              "jd_skill": { "type": "string" },
+              "candidate_skill": { "type": "string" },
+              "score": { "type": "number" }
+            }
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": { "type": "string" },
+              "missing_or_deficient_skill": { "type": "string" },
+              "required_level": { "type": "integer" },
+              "candidate_level": { "type": "integer" },
+              "severity": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
+              "recommendation": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
